@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "7024000493:AAH8J-m_zOanjfQqcBxmadWqLwNhgx8WnDw",
+             bot_token= "5993459003:AAE6xS11BO_Vl3msg-ffsfrt0-hfVtOMZa4",
              api_id= 29838583,
              api_hash= "c89e5b1c1f94011c83d919045ce06eb3")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /ANIL")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /GULSHAN")
 
 
 @bot.on_message(filters.command("stop"))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["ANIL"]))
+@bot.on_message(filters.command(["KING"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
@@ -106,7 +106,7 @@ async def account_login(bot: Client, m: Message):
     await input3.delete(True)
     highlighter  = f"️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'Co':
-        MR = highlighter 
+        MR = 𝐆υℓѕhαη
     else:
         MR = raw_text3
    
@@ -200,13 +200,13 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed tiger **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**downloading failed gulshan **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("Done♻️")
 
 
 bot.run()
